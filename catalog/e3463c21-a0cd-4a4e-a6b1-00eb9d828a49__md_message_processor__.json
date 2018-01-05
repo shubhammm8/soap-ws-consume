@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "getAlltrackResponse"
+        }
+    },
+    "id": "e3463c21-a0cd-4a4e-a6b1-00eb9d828a49",
+    "version": "5.2.0.0"
+}

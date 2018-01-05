@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "getAllMindsResponse"
+        }
+    },
+    "id": "7cf794fa-1587-4bc1-93b2-f30aa3a34173",
+    "version": "5.2.0.0"
+}

@@ -1,0 +1,3393 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>checkme</id>
+        <displayName>checkme</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>checkme</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>checkme</id>
+                <displayName>checkme</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>checkme</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>checkmeResponse</id>
+        <displayName>checkmeResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>checkmeResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>checkmeResponse</id>
+                <displayName>checkmeResponse</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>checkmeResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAllMinds</id>
+        <displayName>getAllMinds</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getAllMinds</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getAllMinds</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAllMindsResponse</id>
+        <displayName>getAllMindsResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getAllMindsResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+              <dataType>LIST</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>minds</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                  <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                    <maxOccurs>2147483647</maxOccurs>
+                    <minOccurs>0</minOccurs>
+                  </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                <dataType>XML</dataType>
+                <metaDataModelPropertiesManager>
+                  <properties/>
+                </metaDataModelPropertiesManager>
+                <fields>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>lid</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                              <localPart>int</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>lid</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>mid</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>mid</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>mindName</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>mindName</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                </fields>
+                <rootElement>
+                  <namespaceURI>http://kalinga.ws/</namespaceURI>
+                  <localPart>getAllMindsResponse</localPart>
+                  <prefix>ns0</prefix>
+                </rootElement>
+                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                  <schemas>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                  </schemas>
+                  <encoding reference="../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                  <baseUri>http://localhost:1919/service?wsdl</baseUri>
+                </schemas>
+                <namespaceManager>
+                  <namespacePrefix class="tree-map">
+                    <entry>
+                      <string>http://kalinga.ws/</string>
+                      <string>ns0</string>
+                    </entry>
+                  </namespacePrefix>
+                </namespaceManager>
+              </model>
+              <isArray>false</isArray>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getAllMindsResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAlltrack</id>
+        <displayName>getAlltrack</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getAlltrack</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>getAlltrack</id>
+                <displayName>getAlltrack</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getAlltrack</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getAlltrackResponse</id>
+        <displayName>getAlltrackResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getAlltrackResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>getAlltrackResponse</id>
+                <displayName>getAlltrackResponse</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+              <dataType>LIST</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>track</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                  <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                    <maxOccurs>2147483647</maxOccurs>
+                    <minOccurs>0</minOccurs>
+                  </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                <dataType>XML</dataType>
+                <metaDataModelPropertiesManager>
+                  <properties/>
+                </metaDataModelPropertiesManager>
+                <fields>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>tid</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>tid</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>trackName</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>trackName</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                </fields>
+                <rootElement>
+                  <namespaceURI>http://kalinga.ws/</namespaceURI>
+                  <localPart>getAlltrackResponse</localPart>
+                  <prefix>ns0</prefix>
+                </rootElement>
+                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                  <schemas>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                  </schemas>
+                  <encoding reference="../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                  <baseUri>http://localhost:1919/service?wsdl</baseUri>
+                </schemas>
+                <namespaceManager>
+                  <namespacePrefix class="tree-map">
+                    <entry>
+                      <string>http://kalinga.ws/</string>
+                      <string>ns0</string>
+                    </entry>
+                  </namespacePrefix>
+                </namespaceManager>
+              </model>
+              <isArray>false</isArray>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getAlltrackResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getLeadById</id>
+        <displayName>getLeadById</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getLeadById</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>arg0</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>arg0</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getLeadById</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getLeadByIdResponse</id>
+        <displayName>getLeadByIdResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getLeadByIdResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>lead</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>leadName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>leadName</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>lid</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>lid</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>tid</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>tid</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getLeadByIdResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                </schemas>
+                <encoding reference="../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                <baseUri>http://localhost:1919/service?wsdl</baseUri>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix class="tree-map">
+                  <entry>
+                    <string>http://kalinga.ws/</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getLeadByIdResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getMindById</id>
+        <displayName>getMindById</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getMindById</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>arg0</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>arg0</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getMindById</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getMindByIdResponse</id>
+        <displayName>getMindByIdResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getMindByIdResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>minds</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>lid</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>lid</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>mid</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>mid</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>mindName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>mindName</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getMindByIdResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                </schemas>
+                <encoding reference="../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                <baseUri>http://localhost:1919/service?wsdl</baseUri>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix class="tree-map">
+                  <entry>
+                    <string>http://kalinga.ws/</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getMindByIdResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getTrackById</id>
+        <displayName>getTrackById</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getTrackById</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>arg0</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>arg0</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getTrackById</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getTrackByIdResponse</id>
+        <displayName>getTrackByIdResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getTrackByIdResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>track</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>tid</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>tid</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>trackName</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI></namespaceURI>
+                          <localPart>trackName</localPart>
+                          <prefix></prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getTrackByIdResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                </schemas>
+                <encoding reference="../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                <baseUri>http://localhost:1919/service?wsdl</baseUri>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix class="tree-map">
+                  <entry>
+                    <string>http://kalinga.ws/</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getTrackByIdResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getallLead</id>
+        <displayName>getallLead</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getallLead</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getallLead</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://kalinga.ws/</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>getallLeadResponse</id>
+        <displayName>getallLeadResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+              <typeQName>
+                <namespaceURI>http://kalinga.ws/</namespaceURI>
+                <localPart>getallLeadResponse</localPart>
+                <prefix></prefix>
+              </typeQName>
+            </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>return</name>
+            <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+              <dataType>LIST</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://kalinga.ws/</namespaceURI>
+                      <localPart>lead</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                  <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                    <maxOccurs>2147483647</maxOccurs>
+                    <minOccurs>0</minOccurs>
+                  </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                <dataType>XML</dataType>
+                <metaDataModelPropertiesManager>
+                  <properties/>
+                </metaDataModelPropertiesManager>
+                <fields>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>leadName</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[2]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>leadName</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>lid</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>lid</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>tid</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI></namespaceURI>
+                            <localPart>tid</localPart>
+                            <prefix></prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                </fields>
+                <rootElement>
+                  <namespaceURI>http://kalinga.ws/</namespaceURI>
+                  <localPart>getallLeadResponse</localPart>
+                  <prefix>ns0</prefix>
+                </rootElement>
+                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                  <schemas>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://schemas.xmlsoap.org/soap/http&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://kalinga.ws/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://kalinga.ws/&quot; version=&quot;1.0&quot;&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkme&quot; type=&quot;tns:checkme&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;checkmeResponse&quot; type=&quot;tns:checkmeResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMinds&quot; type=&quot;tns:getAllMinds&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAllMindsResponse&quot; type=&quot;tns:getAllMindsResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrack&quot; type=&quot;tns:getAlltrack&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getAlltrackResponse&quot; type=&quot;tns:getAlltrackResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadById&quot; type=&quot;tns:getLeadById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getLeadByIdResponse&quot; type=&quot;tns:getLeadByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindById&quot; type=&quot;tns:getMindById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getMindByIdResponse&quot; type=&quot;tns:getMindByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackById&quot; type=&quot;tns:getTrackById&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getTrackByIdResponse&quot; type=&quot;tns:getTrackByIdResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLead&quot; type=&quot;tns:getallLead&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:element name=&quot;getallLeadResponse&quot; type=&quot;tns:getallLeadResponse&quot;/&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkme&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;checkmeResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMinds&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAllMindsResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;minds&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;mid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;mindName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getLeadByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;lead&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;leadName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;lid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrack&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getAlltrackResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;track&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;tid&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;trackName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getTrackByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:track&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLead&quot;&gt;&#xd;
+    &lt;xs:sequence/&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getallLeadResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:lead&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindById&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element name=&quot;arg0&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+  &lt;xs:complexType name=&quot;getMindByIdResponse&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element minOccurs=&quot;0&quot; name=&quot;return&quot; type=&quot;tns:minds&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&#xd;
+&lt;/xs:schema&gt;</string>
+                  </schemas>
+                  <encoding reference="../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                  <baseUri>http://localhost:1919/service?wsdl</baseUri>
+                </schemas>
+                <namespaceManager>
+                  <namespacePrefix class="tree-map">
+                    <entry>
+                      <string>http://kalinga.ws/</string>
+                      <string>ns0</string>
+                    </entry>
+                  </namespacePrefix>
+                </namespaceManager>
+              </model>
+              <isArray>false</isArray>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI></namespaceURI>
+                    <localPart>return</localPart>
+                    <prefix></prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://kalinga.ws/</namespaceURI>
+          <localPart>getallLeadResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:1919/service?wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>

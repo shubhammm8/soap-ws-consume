@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="1989" doc:name="HTTP Listener Configuration"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://localhost:1919/service?wsdl" service="SoapServiceService" port="SoapServicePort" serviceAddress="http://localhost:1919/service"  doc:name="Web Service Consumer"/>
+    <http:request-config name="HTTP_Request_Configuration" host="localhost" port="80" doc:name="HTTP Request Configuration">
+        <http:proxy host="172.17.2.218" port="8085" username="M1043039" password="Gerrard8$"/>
+    </http:request-config>
+    <flow name="swc-alltrack">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="tracks"  doc:name="HTTP" allowedMethods="GET"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getAlltrack" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="e3463c21-a0cd-4a4e-a6b1-00eb9d828a49">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getAlltrackResponse: {
+		(payload.ns0#getAlltrackResponse.*return map ((return , indexOfReturn) -> {
+			return: {
+				tid: return.tid,
+				trackName: return.trackName
+			}
+		}))
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="swc-allleads">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="leads" allowedMethods="GET" doc:name="HTTP"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getallLead" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="fa7406df-3293-4604-9a76-cd0f2e7425af">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getallLeadResponse: {
+		(payload.ns0#getallLeadResponse.*return map ((return , indexOfReturn) -> {
+			return: {
+				leadName: return.leadName,
+				lid: return.lid,
+				tid: return.tid
+			}
+		}))
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="swc-allminds">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/minds" doc:name="HTTP"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getAllMinds" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="7cf794fa-1587-4bc1-93b2-f30aa3a34173">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getAllMindsResponse: {
+		(payload.ns0#getAllMindsResponse.*return map ((return , indexOfReturn) -> {
+			return: {
+				lid: return.lid,
+				mid: return.mid,
+				mindName: return.mindName
+			}
+		}))
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="swc-getleadbyid">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/leads/{LID}" doc:name="HTTP"/>
+        <set-session-variable variableName="lid" value="#[message.inboundProperties.'http.uri.params'.LID]" doc:name="Session Variable"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="ab8cecc7-8fe6-475e-b8fa-2f9ca8890d30">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getLeadById: {
+		arg0: sessionVars.lid as :number
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getLeadById" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="853a8996-54d3-4ece-97bf-db500120dcd3">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getLeadByIdResponse: {
+		return: {
+			leadName: payload.ns0#getLeadByIdResponse.return.leadName,
+			lid: payload.ns0#getLeadByIdResponse.return.lid,
+			tid: payload.ns0#getLeadByIdResponse.return.tid
+		}
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="swc-gettrackbyid">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/tracks/{TID}" doc:name="HTTP"/>
+        <set-session-variable variableName="tid" value="#[message.inboundProperties.'http.uri.params'.TID]" doc:name="Session Variable"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getTrackById: {
+		arg0: sessionVars.tid as :number
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getTrackById" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="1dd9a1f7-514f-4362-a17d-b7097b351424">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getTrackByIdResponse: {
+		return: {
+			tid: payload.ns0#getTrackByIdResponse.return.tid,
+			trackName: payload.ns0#getTrackByIdResponse.return.trackName
+		}
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="swc-getmindbyid">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/minds/{ID}" allowedMethods="GET" doc:name="HTTP"/>
+        <set-session-variable variableName="mid" value="#[message.inboundProperties.'http.uri.params'.ID]" doc:name="Session Variable"/>
+        <logger message="#[sessionVars.mid]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getMindById: {
+		arg0: sessionVars.mid as :number
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="getMindById" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="6610c078-81c1-4300-a300-2b87c2553ae6">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://kalinga.ws/
+---
+{
+	ns0#getMindByIdResponse: {
+		return: {
+			lid: payload.ns0#getMindByIdResponse.return.lid,
+			mid: payload.ns0#getMindByIdResponse.return.mid,
+			mindName: payload.ns0#getMindByIdResponse.return.mindName
+		}
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="soap-ws-consumeFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/check" doc:name="HTTP"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="checkme" doc:name="Web Service Consumer"/>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>
